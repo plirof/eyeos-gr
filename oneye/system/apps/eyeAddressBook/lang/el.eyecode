@@ -1,0 +1,11 @@
+<?php
+global $language;
+$language['Work Mobile'] = 'Κινητό Εργασίας';
+$language['Name'] = 'Όνομα';
+$language['Surname'] = 'Επίθετο';
+
+
+
+
+
+?>
