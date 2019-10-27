@@ -1,0 +1,25 @@
+<?php
+global $language;
+$language['Add bookmark'] = 'Προσθήκη σελιδοδείκτη';
+$language['Back'] = 'Πίσω';
+$language['Bookmark title'] = 'Τίτλος σελιδοδείκτη';
+$language['Bookmarks'] = 'Σελιδοδείκτες';
+$language['Delete bookmark'] = 'Διαγραφή σελιδοδείκτη';
+$language['Do you really want to delete this bookmark?'] = 'Θέλετε πραγματικά να διαγράψετε αυτόν τον σελιδοδείκτη;';
+$language['Forums'] = 'Forums';
+$language['Forward'] = 'Μπροστά';
+$language['Images'] = 'Εικόνες';
+$language['Internet'] = 'Internet';
+$language['Knowledge'] = 'Γνωστό';
+$language['Link successfully deleted.'] = 'Το link διεγράφη επιτυχώς';
+$language['Link successfully saved.'] = 'Το link αποθηκεύτηκε επιτυχώς';
+$language['Open bookmarks'] = 'Άνοιγμα σελιδοδεικτών';
+$language['Open searches'] = 'Άνοιγμα αναζητήσεων';
+$language['Search'] = 'Αναζήτηση';
+$language['Settings'] = 'Ρυθμίσεις';
+$language['Startpage'] = 'Αρχική σελίδα';
+$language['There is already another bookmark with this title!'] = 'Υπάρχει ήδη ένας σελιδοδείκτης με αυτό το όνομα';
+$language['Uncategorized'] = 'Άνευ κατηγορίας';
+$language['Website'] = 'Website';
+$language['Wiki'] = 'Wiki';
+?>

@@ -1,0 +1,14 @@
+<?php
+global $language;
+$language['Actions'] = 'Ενέργειες';
+$language['Copy'] = 'Αντιγραφή';
+$language['Delete'] = 'Διαγραφή';
+$language['Download as zip'] = 'Λήψη ώς zip';
+$language['Download'] = 'Λήψη';
+$language['New file'] = 'Νέο αρχείο';
+$language['New folder'] = 'Νέος Φάκελος';
+$language['Paste'] = 'Επικόλληση';
+$language['Properties'] = 'Ιδιότητες';
+$language['Rename'] = 'Μετονομασία';
+$language['Upload files'] = 'Ανέβασμα αρχείων';
+?>

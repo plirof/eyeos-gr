@@ -1,0 +1,5 @@
+<?php
+global $language;
+$language['Clear'] = 'Καθαρισμός';
+$language['Send'] = 'Αποστολή';
+?>

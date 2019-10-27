@@ -1,0 +1,9 @@
+<?php
+global $language;
+$language['Add input to output'] = 'Προσθέστε τα εισηγμένα στα εξαγόμενα';
+$language['Add new line to end'] = 'Προσθήκη νέας γραμμής στο τέλος';
+$language['Ascii to Hexa'] = 'Ascii to Hexa';
+$language['Auto clear input'] = 'Αυτόματος καθαρισμός εισηγμένων';
+$language['Clear'] = 'Καθαρισμός';
+$language['Options'] = 'Επιλογές';
+?>

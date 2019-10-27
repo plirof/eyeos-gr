@@ -1,0 +1,13 @@
+<?php
+global $language;
+$language['%s not found'] = '%s δεν βρέθηκε';
+$language['Error, empty username or password'] = 'Σφάλμα. κενό username ή κωδικός';
+$language['Error, invalid username or password'] = 'Λάθος username ή κωδικός';
+$language['Invalid username'] = 'Λάθος username';
+$language['Password'] = 'Κωδικός';
+$language['Run as different user'] = 'RUN ως διαφορετικός χρήστης';
+$language['Run...'] = 'Run...';
+$language['Run'] = 'Run';
+$language['Type the name of the app or command to run'] = 'Πληκτρολογήστε το όνομα της εφαρμογής ή της εντολής για άνοιγμα.';
+$language['User'] = 'Χρήστης';
+?>

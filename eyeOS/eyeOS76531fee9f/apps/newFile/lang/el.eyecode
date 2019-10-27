@@ -1,0 +1,4 @@
+<?php
+global $language;
+$language['Some special chars have been removed.'] = 'Κάποιοι ειδικοί χαρακτήρες θα αφαιρεθούν';
+?>

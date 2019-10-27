@@ -1,0 +1,12 @@
+<?php
+global $language;
+$language['Copy'] = 'Αντιγραφή';
+$language['Download'] = 'Λήψη';
+$language['Paste'] = 'Επικόλληση';
+$language['Preferences'] = 'Προτιμήσεις';
+$language['Properties'] = 'Ιδιότητες';
+$language['Refresh'] = 'Ανανέωση';
+$language['Rename'] = 'Μετονομασία';
+$language['Upload files'] = 'Ανέβασμα αρχείων';
+$language['Welcome to %s, %s.'] = 'Καλώς ήλθατε στο %s, %s.';
+?>

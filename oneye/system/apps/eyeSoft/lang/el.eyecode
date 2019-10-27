@@ -1,0 +1,37 @@
+<?php
+global $language;
+$language['%s download is corrupted! unable to install'] = 'Η λήψη του %s είναι αλλοιωμένη. Αδύνατη η εγκατάσταση.';
+$language['%s installed succesfully!'] = 'Η εγκατάσταση του %s ολοκληρώθηκε επιτυχώς';
+$language['Accept'] = 'Αποδοχή';
+$language['All'] = 'Όλα';
+$language['App Name'] = 'Όνομα εφαρμογής';
+$language['Author: %s'] = 'Συντάκτης: %s';
+$language['Categories'] = 'Κατηγορίες';
+$language['Category: %s'] = 'Κατηγορία: %s';
+$language['Dependencies: %s'] = 'Εξάρτηση: %s';
+$language['Description: %s'] = 'Περιγραφή: %s';
+$language['Desktop'] = 'Επιφάνεια εργασίας';
+$language['Do you really want to uninstall this application?'] = 'Θέλετε πραγματικά να απεγκαταστήσετε αυτή την εφαρμογή;';
+$language['Downloading and Installing %s ... please wait'] = 'Λήψη και εγκατάσταση του %s ... Παρακαλώ περιμένετε...';
+$language['eyeSoft: Package list updated'] = 'eyeSoft: Η λίστα ανανεώθηκε';
+$language['Games'] = 'Παιχνίδια';
+$language['Install'] = 'Εγκατάσταση';
+$language['Installed'] = 'Εγκαταστάθηκε';
+$language['Installing'] = 'Εγκαθίσταται';
+$language['License: %s'] = 'Άδεια: %s';
+$language['Multimedia'] = 'Πολυμέσα';
+$language['Name: %s'] = 'Όνομα: %s';
+$language['none'] = 'τίποτα/κανένα';
+$language['Office'] = 'Εφαρμογές Γραφείου';
+$language['Only root can install eyeApps'] = 'Μόνο ο διαχειριστής μπορεί να εγκαθιστά εφαρμογές. Παρακαλώ αποστείλλατε εσωτερικό μήνυμα στον root';
+$language['Please choose an applictaion to be installed.'] = 'Παρακαλώ επιλέξτε μία εφαρμογή προς εγκατάσταση';
+$language['Please choose an applictaion to be uninstalled.'] = 'Παρακαλώ επιλέξτε μία εφαρμογή προς απεγκατάσταση';
+$language['Search'] = 'Αναζήτηση';
+$language['Suggestions: %s'] = 'Προτάσεις: %s';
+$language['The application was successfully uninstalled.'] = 'Η εφαρμογή απεγκαταστάθηκε επιτυχώς';
+$language['Uninstall application'] = 'Απεγκατάσταση εφαρμογής';
+$language['Uninstall'] = 'Απεγκατάσταση';
+$language['Update'] = 'Ενημέρωση';
+$language['Version'] = 'Έκδοση';
+$language['Version: %s'] = 'Έκδοση: %s';
+?>

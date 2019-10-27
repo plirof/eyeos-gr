@@ -1,0 +1,5 @@
+<?php
+global $language;
+$language['Install Apps'] = 'Εγκατάσταση εφαρμογών';
+$language['Manage Dock'] = 'Διαχείριση Dock';
+?>

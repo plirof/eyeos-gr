@@ -1,0 +1,6 @@
+<?php
+global $language;
+$language['File saved successfully.'] = 'Το αρχείο αποθηκεύτηκε επιτυχώς';
+$language['Sorry, you do not have sufficient permissions.'] = 'Συγγνώμη, δεν έχετε τα απαραίτητα δικαιώματα';
+$language['Unable to create file'] = 'Αδύνατη η δημιουργία αρχείου';
+?>

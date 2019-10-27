@@ -1,0 +1,4 @@
+<?php
+global $language;
+$language['Document saved successfully.'] = 'Το έγγραφο αποθηκεύτηκε επιτυχώς';
+?>

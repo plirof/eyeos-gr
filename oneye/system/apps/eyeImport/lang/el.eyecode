@@ -1,0 +1,7 @@
+<?php
+global $language;
+$language['%s files imported!'] = '%s Αρχεία εισήχθησαν';
+$language['Browse'] = 'Περιήγηση';
+$language['Import'] = 'Εισαγωγή';
+$language['You have to select a directory to import files'] = 'Πρέπει να επιλέξετε έναν κατάλογο για εισαγωγή αρχείων';
+?>

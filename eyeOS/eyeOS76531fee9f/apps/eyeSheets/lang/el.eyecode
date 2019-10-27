@@ -1,0 +1,5 @@
+<?php
+global $language;
+$language['Sorry, you do not have sufficient permissions.'] = 'Συγγνώμη, δεν έχετε τα απαραίτητα δικαιώματα';
+$language['Spreadsheet saved successfully.'] = 'Το λογιστικό φύλλο αποθηκεύτηκε επιτυχώς';
+?>

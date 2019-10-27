@@ -1,0 +1,11 @@
+<?php
+global $language;
+$language['Add files to transfer, then press Upload now!'] = 'Προσθέστε αρχεία για ανέβασμα, και μετά πιέστε "Ανέβασμα"';
+$language['Add files'] = 'Προσθήκη αρχείων';
+$language['Advanced'] = 'Προηγμένες';
+$language['Remove'] = 'Αφαίρεση';
+$language['Simple'] = 'Ένα αρχείο';
+$language['Transfering: '] = 'Μεταφορά:';
+$language['Upload files'] = 'Ανέβασμα Αρχείων';
+$language['Upload now!'] = 'Ανέβασμα';
+?>

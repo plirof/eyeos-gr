@@ -1,0 +1,6 @@
+<?php
+global $language;
+$language['Directory not found'] = 'Ο κατάλογος δεν βρέθηκε';
+$language['File Imported!'] = 'Το αρχείο εισήχθη επιτυχώς';
+$language['Format unsupported!'] = 'Ο τύπος δεν υποστηρίζεται!';
+?>

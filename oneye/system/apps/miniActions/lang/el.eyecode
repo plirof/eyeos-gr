@@ -1,0 +1,6 @@
+<?php
+global $language;
+$language['Do you want this widget to open automatically on the next session?'] = 'Θέλετε αυτό το widget να ανοίξει αυτόματα κατά την επόμενη είσοδο;';
+$language['Send an internal message'] = 'Στείλτε ένα εσωτερικό μήνυμα';
+$language['Upload your files'] = 'Ανεβάστε τα αρχεία σας';
+?>

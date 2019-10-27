@@ -1,0 +1,6 @@
+<?php
+global $language;
+$language['Change Label Text'] = 'Αλλαγή κειμένου ετικέτας';
+$language['Example eyeApp'] = 'Παράδειγμα εφαρμογής';
+$language['Hello World!'] = 'Hello World!';
+?>

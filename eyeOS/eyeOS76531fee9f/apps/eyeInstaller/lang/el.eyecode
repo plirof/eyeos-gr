@@ -1,0 +1,8 @@
+<?php
+global $language;
+$language['Accept'] = 'Αποδοχή';
+$language['Do you really want to install this package into the system?'] = 'Είστε βέβαιος ότι θέλετε να εγκαταστήσετε αυτό το πρόγραμμα;';
+$language['Installing'] = 'Εγκατάσταση';
+$language['Nothing to install!'] = 'Δεν υπάρχει τίποτα προς εγκατάσταση';
+$language['Package installed successfully!'] = 'Η εγκατάσταση ολοκληρώθηκε επιτυχώς.';
+?>

@@ -1,0 +1,5 @@
+<?php
+global $language;
+$language['Some special chars have been removed.'] = 'Κάποια special chars αφαιρέθηκαν';
+$language['Type the name of the new folder'] = 'Πληκτρολογήστε το όνομα για τον νέο φάκελο';
+?>

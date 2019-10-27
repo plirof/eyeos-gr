@@ -1,0 +1,42 @@
+<?php
+global $language;
+$language['New'] = 'Νέο';
+$language['Open'] = 'Άνοιγμα';
+$language['Save'] = 'Αποθήκευση';
+$language['Save as'] = 'Αποθήκευση ώς';
+$language['My Images'] = 'Οι εικόνες μου';
+$language['Slideshow'] = 'slideshow';
+$language['new slideshow'] = 'Νέο slideshow';
+$language['second slide'] = 'Δεύτερο slide';
+$language['bold text'] = 'Έντονη γραφή';
+$language['underline text'] = 'Υπογράμμιση';
+$language['italic text'] = 'Πλάγια γραφή';
+
+
+$language['insert text'] = 'Εισαγωγή κειμένου';
+$language['insert ordered list'] = 'Εισαγωγή ταξινομιμένης λίστας';
+$language['insert unordered list'] = 'Εισαγωγή μη-ταξ. λίστας';
+
+
+$language['add a new slide after the selected one'] = 'προσθήκη νέου slide μετά άπό το επιλεγμένο';
+$language['delete the selected slide'] = 'διαγραφή επιλεγμένου slide';
+$language['Click to insert a new slide'] = 'κλικ για εισαγωγή slide';
+$language['Size'] = 'Μέγεθος';
+$language['bring element to the front'] = 'μεταφορά στοιχείου μπροστά';
+$language['change font color'] = 'άλλαξε χρώμα γραμματοσειρά';
+$language['change font family'] = 'άλλαξε γραμματοσειρά';
+$language['change font size'] = 'άλλαξε μέγεθος γραμματοσειράς';
+$language['delete element'] = 'διαγραφή στοιχείου';
+$language['font family'] = 'γραμματοσειρά';
+$language['generic fonts'] = 'generic γραμματοσειρά';
+$language['move the selected slide down one place'] = 'μεταφορά επιλεγμένου slide προς τα κάτω';
+$language['move the selected slide up one place'] = 'μεταφορά επιλεγμένου slide προς τα πάνω';
+$language['send element to the back'] = 'μεταφορά στοιχείου πίσω';
+$language['undo'] = 'αναίρεση';
+$language['view source code'] = 'Προβολή πηγαίου κώδικα';
+
+
+
+
+
+?>

@@ -1,0 +1,23 @@
+<?php
+global $language;
+$language['Attach'] = 'Συνημμένο';
+$language['Date'] = 'Ημερομηνία';
+$language['Download'] = 'Λήψη';
+$language['Empty'] = 'Κενό';
+$language['File saved successfully.'] = 'Το αρχείο αποθηκεύτηκε επιτυχώς';
+$language['From'] = 'Από';
+$language['Inbox'] = 'Εισερχόμενα';
+$language['Message restored in its original folder'] = 'Το μήνυμα επαναφέρθηκε στον αρχικό του φάκελο';
+$language['Read Message'] = 'Ανάγνωση μηνύματος';
+$language['Read'] = 'Διαβασμένα';
+$language['Refresh'] = 'Ανανέωση';
+$language['Reply'] = 'Απάντηση';
+$language['Restore'] = 'Επαναφορά';
+$language['Sent'] = 'Απεσταλμένα';
+$language['Subject'] = 'Θέμα';
+$language['To'] = 'Προς';
+$language['Trash'] = 'Κάδος ανακύκλωσης';
+$language['Unread'] = 'Αδιάβαστα';
+$language['You must choose a message to delete'] = 'Πρέπει να επιλέξετε ένα μήνυμα για διαγραφή';
+$language['You must choose a message to open'] = 'Πρέπει να επιλέξετε ένα μήνυμα προς ανάγνωση';
+?>

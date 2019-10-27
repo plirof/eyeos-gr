@@ -1,0 +1,14 @@
+<?php
+global $language;
+$language['Compress to...'] = 'Συμπίεση σε...';
+$language['Compress'] = 'Συμπίεση';
+$language['Compressed successfully'] = 'Η συμπίεση του αρχείου ολοκληρώθηκε επιτυχώς';
+$language['Compression failed'] = 'Η συμπίεση απέτυχε';
+$language['Extract to...'] = 'Αποσυμπίεση σε';
+$language['Extract'] = 'Αποσυμπίεση';
+$language['File extracted successfully.'] = 'Η αποσυμπίεση του αρχείου ολοκληρώθηκε επιτυχώς';
+$language['File extraction failed'] = 'Η αποσυμπίεση απέτυχε';
+$language['Filename'] = 'Όνομα Αρχείου';
+$language['No file open'] = 'Δεν ανοίγει το αρχείο';
+$language['The compress type is not supported'] = 'Η μέθοδος συμπίεσης του αρχείου δεν υποστηρίζεται';
+?>

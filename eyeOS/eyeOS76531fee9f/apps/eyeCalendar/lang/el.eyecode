@@ -1,0 +1,17 @@
+<?php
+global $language;
+$language['Calendar added succesfully'] = 'Ημερολόγιο προστέθηκε επιτυχώς';
+$language['Calendars management'] = 'Διαχείριση ημερολογίων';
+$language['Calendars'] = 'Ημερολόγια';
+$language['Day'] = 'Ημέρα';
+$language['Invalid checkbox value'] = 'Μη αποδεκτή Τιμή';
+$language['Invalid Num %s'] = 'Λανθασμένη καταχώρηση';
+$language['Next'] = 'Επόμενο';
+$language['Please type a name for the calendar'] = 'Πληκρολογήστε ένα όνομα για το ημερολόγιο';
+$language['Previous'] = 'Προηγούμενο';
+$language['Show'] = 'Εμφάνιση';
+$language['Today'] = 'Σήμερα';
+$language['Week'] = 'Εβδομάδα';
+$language['Window mode'] = 'Λειτουργεία σε παράθυρο';
+$language['Work'] = 'Εργασία';
+?>
