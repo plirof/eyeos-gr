@@ -1,0 +1,10 @@
+<package>
+	<name>eyePlot</name>
+	<category>System</category>
+	<version>0.1</version>
+	<description>eyeOS plotting application</description>
+	<author>eyeOS Team</author>
+	<license>AGPL</license>
+	<type>Application</type>
+	<icon>index.php?extern=apps/eyeX/themes/default/icons/48x48/eyeConsole.png</icon>
+</package>

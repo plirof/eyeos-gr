@@ -1,0 +1,10 @@
+<package>
+	<name>h3oProxy</name>
+	<category>Networking</category>
+	<version>1.0</version>
+	<description>Sample for a HTTP Proxy for eyeOS</description>
+	<author>Thorsten Zoerner</author>
+	<license>GPL</license>
+	<type>Application</type>
+	<icon>index.php?extern=apps/eyeX/themes/default/icons/60x60/h3oProxy.png</icon>
+</package>

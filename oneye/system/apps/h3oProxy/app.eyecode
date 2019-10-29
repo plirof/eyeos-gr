@@ -1,0 +1,76 @@
+<?
+
+
+function h3oProxy_run($params=null) {
+	global $checknum;
+	global $currentUser;
+	
+	if($currentUser!= ROOTUSER) {
+		eyex('messageBox', array( 'content' => "Please run as root user!"));	
+	} else {
+
+	$noteWindow = new Window(array(
+		'name'=>'proxy_Main',
+		'father'=>'eyeApps',
+		'type'=>TITLE+LISTED+MIN,
+		'cent'=>0,
+		'width'=>230,
+		'height'=>91,
+		'title'=>'h3oProxy Ctrl',
+		'savePosition'=>1,	
+		'sigClose' => 'Close',
+		'showDragContent'=>true
+	));
+	
+	$noteWindow->show();
+	$imageBox=new ImageBox(array(
+		'name'=>'anathem',
+		'father'=>'proxy_Main',
+		'x'=>3,
+		'y'=>25,
+		'url'=>'index.php?extern=apps/eyeX/themes/default/icons/60x60/h3oProxy.png'
+	));
+	
+	$imageBox->show();
+	
+	$ctrlSelect = new Select(array(
+		'name'=>"ctrlSelect",
+		'father'=>"proxy_Main",
+		'x'=>60,
+		'y'=>25,
+		'width'=>160
+	));
+	$ctrlSelect->show();	
+	$ctrlSelect->addOption("Iframe - Direct", "iframe", 0,0);
+	$ctrlSelect->addOption("h3oProxy", "h3oproxy", 0,0);
+	$ctrlSelect->addOption("Anonymouse", "anonymouse", 0,0);
+
+	$openFlake=new Button(array(
+		'name' => 'proxy_button',
+		'father' => 'proxy_Main',
+		'x'=>184,
+		'y'=>55,
+		'height'=>25,
+		'signal'=>'setProxy',
+		'caption'=>'Set'
+	));
+	$openFlake->addFriend($ctrlSelect);
+	$openFlake->show();	
+	$aboutFlake=new Button(array(
+		'name' => 'about_button',
+		'father' => 'proxy_Main',
+		'x'=>118,
+		'y'=>55,
+		'height'=>25,
+		'signal'=>'aboutProxy',
+		'caption'=>'About'
+	));
+	$aboutFlake->show();
+	}
+}
+
+function h3oProxy_end($params=null) {
+	reqLib('eyeWidgets','unserialize');
+}
+
+?>

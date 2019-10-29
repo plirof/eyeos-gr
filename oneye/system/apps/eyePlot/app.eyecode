@@ -1,0 +1,42 @@
+<?php 
+/*
+
+eyePlot 0.1
+	
+userInfo is released under the GNU Affero General Public License Version 3 (AGPL3)
+provided with this release in license.txt or via web at gnu.org/licenses/agpl-3.0.txt
+
+Copyright 2008 Jose Carlos Norte (jose@eyeos.org)
+         
+*/
+
+function eyePlot_run($params=null) {
+	//create the main window
+	$myWindow = new Window(array(
+		'title'=>'eyePlot',
+		'name'=>'WND_1',
+		'father' => 'eyeApps',
+		'cent'=>1,
+		'width'=>632,
+		'height'=>650,
+		'style'=>LISTED+CLOSE+MIN+TITLE
+	));
+	$myWindow->show();
+	
+	$myFrame = new Iframe(array(
+		'name'=>'iframize_IFRM_1',
+		'father'=>'WND_1_Content',
+		'x'=>0,
+		'y'=>0,
+		'height'=>625,
+		'width'=>610,
+		'url'=>"index.php?extern=apps/eyePlot/plot.html",
+	));
+	$myFrame->show();
+}
+
+function eyePlot_end() {
+	eyeWidgets('unserialize');
+}
+
+?>

@@ -1,0 +1,75 @@
+<?php
+function h3oProxy_on_Resize($params='') {
+	$width = intval($params['arg'][0]);
+	$height = intval($params['arg'][1]);
+
+
+	$GLOBALS["brwFrame"]->setWidth($width-3);
+	$GLOBALS["brwFrame"]->setHeight($height-23);	
+
+}
+function h3oProxy_on_aboutProxy($params=null) {	
+		service('proc','launch',array("eyeNav","http://h3o.de/app/h3oProxy"));
+}
+function h3oProxy_on_proxy($params=null) {
+	global $checknum;	
+	$GLOBALS["_script_url"]="./index.php?checknum=".$checknum."&msg=proxy";
+	$GLOBALS["_script_base"]="./index.php?checknum=".$checknum."&msg=proxy";
+	include_once("apps/h3oProxy/index.php");
+}
+function h3oProxy_on_setProxy($params=null) {
+	
+	if(!file_exists("apps/eyeNav/plugins/iframe.eyecode")) {
+		eyex('messageBox', array( 'content' => "Unable to access eyeNav Plugins Directory"));	
+		proc('end');		
+	}
+	if(!file_exists("apps/eyeNav/plugins/".$params['ctrlSelect'][0].".eyecode")) {
+		eyex('messageBox', array( 'content' => "Unable to retrieve selected eyeNav plugin"));	
+		proc('end');
+	}	
+	if(!file_exists("apps/eyeNav/plugins/iframe.eyecode.org")) {
+		copy("apps/eyeNav/plugins/iframe.eyecode","apps/eyeNav/plugins/iframe.eyecode.org");
+	}	
+	if(!file_exists("apps/eyeNav/plugins/h3oproxy.eyecode.org")) {
+		copy("apps/eyeNav/plugins/h3oproxy.eyecode","apps/eyeNav/plugins/h3oproxy.eyecode.org");
+	}		
+	if(!file_exists("apps/eyeNav/plugins/anonymouse.eyecode.org")) {
+		copy("apps/eyeNav/plugins/anonymouse.eyecode","apps/eyeNav/plugins/anonymouse.eyecode.org");
+	}		
+
+	copy("apps/eyeNav/plugins/".$params['ctrlSelect'][0].".eyecode.org","apps/eyeNav/plugins/iframe.eyecode");
+
+	eyex('messageBox', array( 'content' => "System using ".$params['ctrlSelect'][0]." as Proxy"));	
+	
+	proc('end');		
+}
+
+
+function h3oProxy_on_startproxy($params=null) {
+	global $checknum;
+	
+	$appcode2="./index.php?checknum=".$checknum."&msg=proxy";
+	$appcode1="";
+	$rightFrame=new IFrame(array(
+		'name' => 'brwFrame',
+		'father' => 'h3oProxyWND',
+		'x' => 0,
+		'y' => 30,
+		'width' => 798,
+		'height' => 570,
+		'url'=>$appcode1
+	));
+	$rightFrame->show();
+	
+	$GLOBALS["brwFrame"]->setUrl($appcode2);
+}
+
+function h3oProxy_on_Close(){
+	eyeX('rawjs',array('js'=>$GLOBALS['upCallback']->text));
+	proc('end');	
+}
+
+function h3oProxy_on_Message($params=null) {
+       reqLib('eyeWidgets', 'updateContent', $params);
+}
+?>
