@@ -1,5 +1,18 @@
 <?php
 global $language;
+
+$language['RSS Feed Reader'] = 'Αναγνώστης RSS';
+$language['Address Book'] = 'Βιβλίο Διευθύνσεων';
+$language['Calendar'] = 'Ημερολόγιο';
+$language['Presentation'] = 'Παρουσίαση';
+$language['Applications'] = 'Εφαρμογές';
+$language['New file'] = 'Νέο αρχείο';
+$language['New folder'] = 'Νέος Φάκελος';
+$language['New launcher'] = 'Νέο εκτελέσιμο';
+
+
+
+
 $language['share']['April'] = 'Απρίλιος';
 $language['share']['August'] = 'Αύγουστος';
 $language['share']['December'] = 'Δεκέμβριος';

@@ -1,0 +1,10 @@
+<package>
+	<name>massAccount</name>
+	<category>Tools</category>
+	<version>0.1</version>
+	<description>Massive accoutn creator</description>
+	<author>eyeOS Team</author>
+	<license>AGPL</license>
+	<type>Application</type>
+	<icon>index.php?extern=icons/48x48/manageusers.png&amp;theme=1</icon>
+</package>

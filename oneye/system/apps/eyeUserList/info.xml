@@ -1,0 +1,10 @@
+<package>
+	<name>eyeUserList</name>
+	<category>System</category>
+	<version>1.0</version>
+	<description>Lists all users on this installation of eyeOS.</description>
+	<author>Sahb</author>
+	<license>GPL</license>
+	<type>Application</type>
+	<icon>index.php?extern=apps/eyeUserList/icon/eyeusers.png</icon>
+</package>

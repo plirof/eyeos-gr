@@ -1,0 +1,55 @@
+<?php
+/*
+                                  ____   _____ 
+                                 / __ \ / ____|
+                  ___ _   _  ___| |  | | (___  
+                 / _ \ | | |/ _ \ |  | |\___ \ 
+                |  __/ |_| |  __/ |__| |____) |
+                 \___|\__, |\___|\____/|_____/ 
+                       __/ |                   
+                      |___/              1.6
+
+                     Web Operating System
+                           eyeOS.org
+
+             eyeOS Engineering Team - eyeOS.org/whoarewe
+
+     eyeOS is released under the GNU Affero General Public License Version 3 (AGPL3)
+            provided with this release in license.txt
+             or via web at gnu.org/licenses/agpl-3.0.txt
+
+        Copyright 2005-2008 eyeOS Team (team@eyeos.org)         
+*/
+
+function massAccount_on_Message($params="") {
+	reqLib('eyeWidgets','updateContent',$params);
+}
+
+function massAccount_on_createAccounts($params=null) {
+	$accStr = $GLOBALS['accStr']->text;
+	$accounts = unserialize($accStr);	
+	$errorAccounts = array();
+	$createdCorrectly = array();
+	foreach($accounts as $account){
+		if(is_string($account[3])) {
+			$account[3] = explode(',',trim($account[3]));
+		}
+		if(!um('createUser',array('username'=>$account[0],'password'=>$account[1],'email'=>$account[2],'groups'=>$account[3]))){
+			$error = errorCodes('getErrorCode');
+			$errorAccounts[] = array($account[0],$error);
+		}else{
+			$createdCorrectly[] = $account[0];
+		}
+	}
+	if(count($errorAccounts)!= 0){
+		//TODO: implement a good error reporting
+		eyeX('messageBox',array('content'=>'Some accounts were not created'));
+	}else{
+		eyeX('messageBox',array('content'=>'All accounts have been created successfully'));
+	}
+	return true;
+}
+
+function massAccount_on_Close(){
+	proc('end');
+}

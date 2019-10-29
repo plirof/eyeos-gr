@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+		<title>title</title>
+		<script type="text/javascript" src="index.php?extern=apps/eyePlot/wz_grapher.js"></script>
+		<style type="text/css">
+			/* eyeButton */
+			body {
+				font-family:Verdana,FreeSans;
+				font-size:11px;
+			}
+			.bt2 {
+				border-top: 1px solid #858585;
+				border-bottom: 1px solid #858585;
+				border-left: 1px solid #aeaeae;
+				border-right: 1px solid #aeaeae;
+				font-size: 11px;
+				height: 22px;
+				background-image: url('index.php?extern=apps/eyePlot/buttonbg.png');
+			}
+			.bt2:hover {
+				border-top: 1px solid #6fa1e0;
+				border-bottom: 1px solid #6fa1e0;
+				border-left: 1px solid #a1c6f3;
+				border-right: 1px solid #a1c6f3;
+			}
+		</style>
+	</head>
+	<body bgcolor="#ffffff">
+		<form id="fo" name="fo" action="javascript:if (window.mkGraph) mkGraph(this);" onsubmit="return false;">
+			<div id="inputs" style="position:relative;text-align:left;">
+				<div style="padding-top:8px;padding-right:8px;padding-left:50px;">
+		            <div style="position:absolute;right:10px;top:30px;">x min <input style="border: 1px solid gray;" name="XA" type="text" class="input" size="6" maxlength="13" value="-5"></div>
+		            <div style="position:absolute;right:10px;top:54px;">x max <input style="border: 1px solid gray;" name="XZ" type="text" class="input" size="6" maxlength="13" value="5"></div>
+		            <div style="position:absolute;right:10px;top:78px;">y min <input style="border: 1px solid gray;" name="YA" type="text" class="input" size="6" maxlength="13" value="-5"></div>
+		            <div style="position:absolute;right:10px;top:102px;">y max <input style="border: 1px solid gray;" name="YZ" type="text" class="input" size="6" maxlength="13" value="5"></div>
+		            <b>Function f(x)</b>
+		            <br/>
+		            <textarea name="F" class="input" style="width:420px;height:100px;border: 1px solid gray;"></textarea>
+		            <br/>
+		            <input type="submit" class="bt2" value="Plot Graph" onclick="if (window.mkGraph) mkGraph(this.form); return false;">
+					<input name="Add" type="checkbox">don't delete previous graphs&nbsp;&nbsp;
+					<input type="button" class="bt2" value="Delete graphs" onmouseup="this.form.F.focus()" onclick="delGraphs(1)">
+					<br/>&nbsp;
+				</div>
+			</div>
+			<div id="graphframe" style="position:relative;left:0px;top:0px;"></div>
+		</form>
+	</body>
+</html>

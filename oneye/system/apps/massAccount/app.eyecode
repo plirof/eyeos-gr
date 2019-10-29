@@ -1,0 +1,94 @@
+<?php
+/*
+                                  ____   _____ 
+                                 / __ \ / ____|
+                  ___ _   _  ___| |  | | (___  
+                 / _ \ | | |/ _ \ |  | |\___ \ 
+                |  __/ |_| |  __/ |__| |____) |
+                 \___|\__, |\___|\____/|_____/ 
+                       __/ |                   
+                      |___/              1.6
+
+                     Web Operating System
+                           eyeOS.org
+
+             eyeOS Engineering Team - eyeOS.org/whoarewe
+
+     eyeOS is released under the GNU Affero General Public License Version 3 (AGPL3)
+            provided with this release in license.txt
+             or via web at gnu.org/licenses/agpl-3.0.txt
+
+        Copyright 2005-2008 eyeOS Team (team@eyeos.org)         
+*/
+
+function massAccount_run($params = '') {
+	global $currentUser;
+	if($currentUser != ROOTUSER){
+		eyex('messageBox',array('content'=>'Sorry but you must be Administrator to run this app :/'));
+		proc('end');
+		return false;
+	}
+	$fileName = 'accounts.txt';
+	$userPath = um('getCurrentUserDir').FILES_USER_DIR.'/';
+	$fullPath = $userPath.$fileName;
+	if(!vfs('fileExists',array($fullPath))){
+		eyex('messageBox',array('content'=>'You must have an accounts.txt file in your home directory'));
+		proc('end');
+		return false;
+	}
+
+	$window = new Window(array('name'=>'massAccount_wnd','title'=>'Massive Account Creator','width'=>350,'height'=>500,'father'=>'eyeApps','cent'=>1));
+	$window->show();
+	
+	$logo = new Imagebox(array('name'=>'logo_Img','father'=>'massAccount_wnd_Content','url'=>'index.php?version='.EXTERN_CACHE_VERSION.'&theme=1&extern=icons/48x48/manageusers.png','x'=>5,'y'=>5));
+	$logo->show();
+	
+	$label = new Label(array('name'=>'massAccount_Lbl','father'=>'massAccount_wnd_Content','x'=>62,'y'=>10,'text'=>'The following accounts are about to be created. You must ensure that all the needed groups already exist.'));
+	$label->show();
+	$label->setCss(array('font-weight' => 'bold'));
+
+	$myHeader = array('Username','Password','Email','Groups');
+	$sortypes = array("String","String","String","String");
+	$myTable = new Sortabletable(array('name'=>'massAccount_tbl','father'=>'massAccount_wnd_Content',
+		'sortypes'=>$sortypes,'theader'=>$myHeader,'x'=>2,'y'=>60,'width'=>342,'height'=>380));
+	$myTable->show();
+	
+	$myButton = new Button(array('name'=>'massAccount_btn','father'=>'massAccount_wnd_Content','x'=>10,'y'=>448,'horiz'=>1,'caption'=>'Create Accounts','signal'=>'createAccounts'));
+	$myButton->show();
+	
+	//Since we are going to use the file php function direclty, we need to check the permissions manually
+	if(!vfs('checkPermissions',array($fullPath))){
+		eyex('messageBox',array('content'=>'You doesn\'t have enought permissions to read this file'));
+		proc('end');
+		return false;
+	}
+	//Getting the real name to be able to use the file function
+	$realPath = vfs('getRealName',array($fullPath));
+	
+	$lines = file($realPath);
+	$accounts = array();
+	$sortRow = array();
+	foreach($lines as $line){
+		$info = strtok($line,",");
+		while ($info !== false) {
+    			$sortRow[] = $info;
+    			$info = strtok(",");
+		}
+		if (is_string($sortRow[3])) {
+			$sortRow[3] = str_replace(';',',', $sortRow[3]);
+		}
+		$myTable->addRow($sortRow);
+		$accounts[] = $sortRow;
+		$sortRow = array();
+	}
+	$accStr = serialize($accounts);	
+	$hide = new Hidden(array('name'=>'accStr','father'=>'bar','text'=>$accStr));
+	eyeWidgets('serialize',array($hide));
+}
+
+function massAccount_end($params=null) {
+	eyeWidgets('unserialize');
+}
+
+
+?>
